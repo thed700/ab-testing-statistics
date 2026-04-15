@@ -1,74 +1,120 @@
-# 📊 Statistical Hypothesis Testing & A/B Test Simulation
+# 📊 Statistical Hypothesis Testing & A/B Simulation
+### 7-Day Hands-on Statistics Journey | Python & SciPy
 
-**7-day hands-on statistics project** | Python · SciPy · Pandas · Matplotlib
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![SciPy](https://img.shields.io/badge/SciPy-1.12%2B-8CAAE6?logo=scipy&logoColor=white)](https://scipy.org/)
+[![Status](https://img.shields.io/badge/Status-Completed-success.svg)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
----
+A comprehensive data science framework for validating business hypotheses through rigorous statistical methods. This project bridges the gap between raw data and data-driven decision making.
 
-## 📁 Project Structure
-
-```
-ab_testing_project/
-├── notebooks/
-│   ├── 01_hypothesis_testing.ipynb      # Day 15: Hypothesis Testing
-│   ├── 02_p_value.ipynb                 # Day 16: p-value
-│   ├── 03_t_test.ipynb                  # Day 17: T-test
-│   ├── 04_chi_square.ipynb              # Day 18: Chi-square test
-│   ├── 05_confidence_interval.ipynb     # Day 19: Confidence Interval
-│   ├── 06_split_testing.ipynb           # Day 20: Split Testing
-│   └── 07_ab_test_simulation.ipynb      # Day 21: Mini project
-├── data/
-│   └── generate_data.py                 # Synthetic data generator
-├── src/
-│   ├── stats_utils.py                   # Reusable statistical functions
-│   └── visualizer.py                    # Visualization helpers
-├── results/                             # Exported charts & reports
-├── tests/
-│   └── test_stats_utils.py              # Unit tests
-├── requirements.txt
-└── README.md
-```
+[**Project Structure**](#-project-structure) • [**Curriculum**](#-topics-covered) • [**A/B Simulation**](#-final-project-simulation) • [**Installation**](#-installation)
 
 ---
 
-## 🚀 Installation
+## 📋 Executive Summary
+
+**The Goal:** To master the application of frequentist statistics in real-world scenarios, specifically focusing on E-commerce A/B testing and hypothesis validation.
+
+**Key Components:**
+* **Statistical Tests:** T-tests, Chi-Square, and ANOVA.
+* **Probabilistic Logic:** p-value intuition, Effect Size (Cohen’s d), and Confidence Intervals.
+* **Simulation:** Building a synthetic A/B test environment to evaluate conversion rate uplifts.
+
+---
+
+## 🗂 Project Structure
 
 ```bash
-git clone https://github.com/thed700/ab-testing-statistics.git
-cd ab-testing-statistics
-pip install -r requirements.txt
-jupyter notebook
-```
+ab_testing_project/
+├── notebooks/
+│   ├── 01_hypothesis_testing.ipynb  # Foundations & Logic
+│   ├── 02_p_value.ipynb             # Distribution analysis
+│   ├── 03_t_test.ipynb              # T-test applications
+│   ├── 04_chi_square.ipynb          # Categorical testing
+│   ├── 05_confidence_interval.ipynb # Uncertainty quantification
+│   ├── 06_split_testing.ipynb       # Methodology
+│   └── 07_ab_test_simulation.ipynb  # Final Case Study
+├── data/
+│   └── generate_data.py             # Synthetic data engine
+├── src/
+│   ├── stats_utils.py               # Reusable statistical functions
+│   └── visualizer.py                # Publication-quality charts
+├── requirements.txt
+└── README.md
+````
 
----
+-----
 
 ## 📚 Topics Covered
 
-| Day | Topic | Notebook |
-|-----|-------|---------|
-| 15 | Hypothesis Testing fundamentals | `01_hypothesis_testing.ipynb` |
-| 16 | p-value intuition & calculation | `02_p_value.ipynb` |
-| 17 | Independent T-test | `03_t_test.ipynb` |
-| 18 | Chi-square test for categorical data | `04_chi_square.ipynb` |
-| 19 | Confidence Intervals & visualization | `05_confidence_interval.ipynb` |
-| 20 | Split Testing with real-world example | `06_split_testing.ipynb` |
-| 21 | Full A/B Test Simulation (mini project) | `07_ab_test_simulation.ipynb` |
+| Day | Topic | Technical Focus | Notebook |
+| :--- | :--- | :--- | :--- |
+| **D15** | **Hypothesis Testing** | Null vs Alternative Hypotheses | `01_testing.ipynb` |
+| **D16** | **p-value Intuition** | Type I & Type II Errors | `02_p_value.ipynb` |
+| **D17** | **T-tests** | Independent & Paired Samples | `03_t_test.ipynb` |
+| **D18** | **Chi-Square** | Categorical Independence | `04_chi_square.ipynb` |
+| **D19** | **Confidence Intervals** | Error Margins & Bootstrapping | `05_interval.ipynb` |
+| **D21** | **A/B Simulation** | Full conversion rate analysis | `07_simulation.ipynb` |
 
----
+-----
 
-## 🎯 Final Project
+## 🎯 Final Project Simulation
 
-The mini project simulates a real **E-commerce A/B test**:
-- Compare conversion rates between control vs treatment groups
-- Test statistical significance (p < 0.05)
-- Calculate effect size (Cohen's d)
-- Make a data-driven business decision
+The capstone project simulates a high-stakes E-commerce decision: **Should we implement a new checkout flow?**
 
----
+### Analysis Pipeline:
+
+1.  **Metric Definition:** Primary KPI is Conversion Rate (CR).
+2.  **Power Analysis:** Determining the required sample size for statistical significance.
+3.  **Statistical Testing:** Applying Welch's T-test for continuous metrics.
+4.  **Business Conclusion:** Evaluating if the observed lift justifies the engineering cost.
+
+-----
 
 ## 🛠 Tech Stack
 
-`Python 3.10+` · `SciPy` · `NumPy` · `Pandas` · `Matplotlib` · `Seaborn` · `Jupyter`
+  * **Core:** Python 3.10+
+  * **Analysis:** Pandas, NumPy
+  * **Statistics:** SciPy Stats, Statsmodels
+  * **Visualization:** Matplotlib, Seaborn (Dark-themed professional plots)
 
----
+-----
 
-*thed700 | Statistical Learning Journey*
+## ⚙️ Installation
+
+```bash
+# 1. Clone the repository
+git clone [https://github.com/thed700/ab-testing-statistics.git](https://github.com/thed700/ab-testing-statistics.git)
+cd ab-testing-statistics
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Launch the journey
+jupyter notebook
+```
+
+-----
+
+## 🔬 Key Learnings
+
+  * **Statistical Significance vs. Practical Significance:** A small p-value doesn't always mean a large business impact.
+  * **Handling Skewed Data:** Applying transformations before testing.
+  * **Standard Error:** Visualizing uncertainty through forest plots and error bars.
+
+-----
+
+## 👤 Author
+
+**Akmal** — *Data Analyst & Statistical Learner*
+
+  * **GitHub:** [@thed700](https://github.com/thed700)
+  * **Telegram:** [@Eshituvchiy](https://www.google.com/search?q=https://t.me/Eshituvchiy)
+
+-----
+
+*License: MIT — Build, learn, and contribute.*
+
+```
+```
