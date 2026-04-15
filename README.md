@@ -115,6 +115,3 @@ jupyter notebook
 -----
 
 *License: MIT — Build, learn, and contribute.*
-
-```
-```
